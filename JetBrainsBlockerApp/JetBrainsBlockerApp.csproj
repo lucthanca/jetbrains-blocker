@@ -1,0 +1,45 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+	<OutputPath>.\..\Build</OutputPath>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+	<Description>A open source tool for block JetBrains Authorization Outbound Data</Description>
+	<Copyright>Copyright © 2024, Vadu</Copyright>
+	<PackageProjectUrl>https://github.com/lucthanca/jetbrains-blocker</PackageProjectUrl>
+	<RepositoryUrl>https://github.com/lucthanca/jetbrains-blocker</RepositoryUrl>
+	<AssemblyVersion>1.0.0</AssemblyVersion>
+	<ApplicationHighDpiMode></ApplicationHighDpiMode>
+	<ApplicationIcon>app.ico</ApplicationIcon>
+	<PackageReadmeFile>README.md</PackageReadmeFile>
+	<PackageIcon>intellij-idea-icon-128x128-hsyna1mi.png</PackageIcon>
+	<StartupObject>Vadu.Program</StartupObject>
+	<AssemblyName>JetBrains Blocker</AssemblyName>
+	<RootNamespace>Vadu</RootNamespace>
+	<Title>JetBrains Authorization Blocker</Title>
+	<Authors>Vadu</Authors>
+	<RepositoryType>git</RepositoryType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Lib\Lib.csproj" />
+  </ItemGroup>
+	<ItemGroup>
+		<Content Include="app.ico" />
+	</ItemGroup>
+	<ItemGroup>
+	  <None Include="..\..\..\..\Pictures\intellij-idea-icon-128x128-hsyna1mi.png">
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+	  </None>
+	  <None Include="..\README.md">
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+	  </None>
+	</ItemGroup>
+
+</Project>
